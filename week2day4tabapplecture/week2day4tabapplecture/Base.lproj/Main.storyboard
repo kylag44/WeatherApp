@@ -104,6 +104,20 @@
                                     <outletCollection property="gestureRecognizers" destination="goo-Kj-mxd" appends="YES" id="La1-1L-tRp"/>
                                 </connections>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="44z-tx-7Me">
+                                <rect key="frame" x="67" y="444" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.48748958456324876" blue="0.98104839265260957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KAH-FY-L61" appends="YES" id="rXK-Pc-rx1"/>
+                                </connections>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i78-nf-FQ0">
+                                <rect key="frame" x="67" y="79" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.79817549239999996" blue="0.28943611450000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -132,6 +146,11 @@
                         <action selector="handlePanGesture:" destination="8rJ-Kc-sve" id="McZ-Yn-FIr"/>
                     </connections>
                 </panGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="KAH-FY-L61">
+                    <connections>
+                        <action selector="swipedHandled:" destination="8rJ-Kc-sve" id="Dpo-4J-qCZ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>

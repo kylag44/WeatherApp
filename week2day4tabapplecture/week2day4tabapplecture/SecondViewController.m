@@ -37,5 +37,12 @@
 }
 
 
+
+//- (IBAction)swipedHandled:(UISwipeGestureRecognizer *)sender {
+//    int x = arc4random_uniform(300);
+//    int y = arc4random_uniform(300);
+//    sender.
+//}
+
 @end
 
